@@ -79,10 +79,9 @@ local_conf_header:
     # IMAGE_INSTALL_append = " lmsensors-libsensors"
     IMAGE_INSTALL_append = " boost"
     #IMAGE_INSTALL_append = " rauc"
-    SDKEXTPATH ?= "saratoga"
     SDK_UPDATE_URL ?= ""
     # SSTATE_MIRRORS ?=
-    # "file://.* http://vishnefske.com/saratoga-yocto/sstate-cache/PATH"
+    # "file://.* http://vishnefske.com/yocto/sstate-cache/PATH"
     PNBLACKLIST[qt5-creator] = "dependencies not currently avaliable"
     SDK_LOCAL_CONF_WHITELIST_append = "SSTATE_MIRRORS"
     SDK_LOCAL_CONF_BLACKLIST_append = 'BB_HASHSERVE'
