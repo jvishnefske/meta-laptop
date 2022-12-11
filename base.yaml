@@ -1,0 +1,27 @@
+# to build install kas with pip, or docker.
+#  $ kas checkout
+#  $ kas build
+#  $ kas build  -c populate_sdk_ext
+---
+header:
+  version: 10
+  includes:
+      - poky.yaml
+defaults:
+    repos:
+        #refspec: kirkstone
+       refspec: langdale
+distro: poky-altcfg
+target: core-image-base
+local_conf_header:
+  base: |
+    #EXTRA_IMAGE_FEATURES:append = " package-management"
+    #PACKAGE_CLASSES ?= "package_deb"
+    EXTRA_IMAGE_FEATURES:append = " debug-tweaks"
+    #DISTRO_FEATURES:append = " systemd"
+    #VIRTUAL_RUNTIME_init_manager = "systemd"
+    IMAGE_FSTYPES = "wic.bz2 wic.bmap"
+    BB_SIGNATURE_HANDLER = "OEEquivHash"
+    BB_HASHSERVE = "auto"
+    BB_HASHSERVE_UPSTREAM = "hashserv.yocto.io:8687"
+    SSTATE_MIRRORS ?= "file://.* https://sstate.yoctoproject.org/all/PATH;downloadfilename=PATH"
