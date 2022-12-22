@@ -1,0 +1,6 @@
+---
+header:
+  version: 1
+repos:
+  poky:
+    url: "https://github.com/jvishnefske/meta-geode-bsp.git"

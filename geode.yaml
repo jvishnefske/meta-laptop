@@ -2,7 +2,5 @@ header:
   version: 10
   includes:
     - base.yaml
+    - meta-geode-bsp.yaml 
 machine: geode
-repos:
-    meta-geode:
-        url: https://github.com/jvishnefske/meta-geode
