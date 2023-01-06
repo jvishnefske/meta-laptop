@@ -1,0 +1,16 @@
+header:
+  version: 10
+  includes:
+    - base.yaml
+      #- oe.yaml
+machine: raspberrypi-armv7
+repos:
+    meta-minimal:
+        path: meta-minimal
+    meta-raspberrypi:
+        url: "git://git.yoctoproject.org/meta-raspberrypi"
+
+local_conf_header:
+  development: |
+    LICENSE_FLAGS_ACCEPTED:append = "synaptics-killswitch"
+    SKIP_RECIPE[rpi-libcamera-apps] = ""
