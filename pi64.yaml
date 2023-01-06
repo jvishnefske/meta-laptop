@@ -1,0 +1,17 @@
+header:
+  version: 10
+  includes:
+    - base.yaml
+    #- oe.yaml
+machine: raspberrypi-armv8
+#target: core-image-weston-sdk
+#target: world
+repos:
+    meta-minimal:
+        path: meta-minimal
+    meta-raspberrypi:
+        url: "git://git.yoctoproject.org/meta-raspberrypi"
+
+local_conf_header:
+  development: |
+    LICENSE_FLAGS_ACCEPTED:append = "synaptics-killswitch"
