@@ -1,0 +1,6 @@
+header:
+  version: 10
+  includes:
+    - base.yaml
+    - meta-xilinx.yaml
+machine: microblaze-tc

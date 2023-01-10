@@ -1,0 +1,13 @@
+---
+header:
+  version: 1
+repos:
+   meta-xilinx:
+     url: "https://git.yoctoproject.org/git/meta-xilinx"
+     refspec: 22bdaf77674cf219e8ce899dac9263b63ea9f432
+     layers:
+       meta-microblaze:
+       meta-xilinx-bsp:
+       meta-xilinx-core:
+       meta-xilinx-standalone:
+
