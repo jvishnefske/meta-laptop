@@ -3,4 +3,3 @@ header:
   includes:
     - base.yaml
     - meta-arm.yaml
-machine: qemuarm
