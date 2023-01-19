@@ -11,5 +11,5 @@ repos:
 local_conf_header:
   arm: |
       LICENSE_FLAGS_ACCEPTED += "armcompiler"
-      #TCMODE="external-arm"
+      TCMODE="external-arm"
   
