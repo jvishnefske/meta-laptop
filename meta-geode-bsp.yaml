@@ -2,11 +2,5 @@
 header:
   version: 1
 repos:
-  meta-geode-bsp:
+  poky:
     url: "https://github.com/jvishnefske/meta-geode-bsp.git"
-    
-    
-local_conf_header:
-  geode: |
-    BB_HASHSERVE_UPSTREAM = ""
-    SSTATE_MIRRORS = ""
