@@ -2,7 +2,8 @@ header:
   version: 10
   includes:
     - base.yaml
-    - openembedded.yaml
+    #- meta-openembedded.yaml
+    - meta-arm.yaml
 machine: raspberrypi0-wifi
 repos:
     meta-minimal:
@@ -12,5 +13,5 @@ repos:
 
 local_conf_header:
   development: |
-    LICENSE_FLAGS_ACCEPTED:append = "synaptics-killswitch"
+    LICENSE_FLAGS_ACCEPTED += "synaptics-killswitch"
     SKIP_RECIPE[rpi-libcamera-apps] = ""
