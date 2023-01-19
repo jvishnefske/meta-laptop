@@ -2,7 +2,7 @@ header:
   version: 10
   includes:
     - base.yaml
-      #- oe.yaml
+    - meta-arm.yaml
 machine: raspberrypi-armv7
 repos:
     meta-minimal:

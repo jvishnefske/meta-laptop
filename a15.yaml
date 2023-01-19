@@ -2,4 +2,4 @@ header:
   version: 10
   includes:
     - base.yaml
-machine: qemuarm
+    - meta-arm.yaml

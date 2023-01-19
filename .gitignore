@@ -34,3 +34,6 @@ layers/
 *.exe
 *.out
 *.app
+meta-*/
+poky/
+

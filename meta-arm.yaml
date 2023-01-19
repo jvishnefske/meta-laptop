@@ -1,0 +1,15 @@
+---
+header:
+  version: 1
+repos:
+   meta-arm:
+     url: "https://git.yoctoproject.org/git/meta-arm"
+     layers:
+       meta-arm:
+       meta-arm-bsp:
+       meta-arm-toolchain:
+local_conf_header:
+  arm: |
+      LICENSE_FLAGS_ACCEPTED += "armcompiler"
+      #TCMODE="external-arm"
+  

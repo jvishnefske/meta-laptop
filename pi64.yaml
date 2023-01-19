@@ -2,7 +2,7 @@ header:
   version: 10
   includes:
     - base.yaml
-    #- oe.yaml
+    - meta-arm.yaml
 machine: raspberrypi-armv8
 #target: core-image-weston-sdk
 #target: world
