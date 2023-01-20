@@ -1,3 +1,4 @@
+arm-gnu-toolchain*/
 build/
 # layers folder is managed by kas from external repos.
 layers/

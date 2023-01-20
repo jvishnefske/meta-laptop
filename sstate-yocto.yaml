@@ -1,0 +1,9 @@
+---
+header:
+    version: 9
+local_conf_header:
+  yocto: |
+    BB_SIGNATURE_HANDLER = "OEEquivHash"
+    BB_HASHSERVE = "auto"
+    BB_HASHSERVE_UPSTREAM ??= "hashserv.yocto.io:8687"
+    SSTATE_MIRRORS ??= "file://.* https://sstate.yoctoproject.org/all/PATH;downloadfilename=PATH"

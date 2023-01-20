@@ -4,14 +4,7 @@ header:
     - base.yaml
     #- meta-openembedded.yaml
     - meta-arm.yaml
-machine: raspberrypi0-wifi
-repos:
-    meta-minimal:
-        path: meta-minimal
-    meta-raspberrypi:
-        url: "git://git.yoctoproject.org/meta-raspberrypi"
-
+    - meta-raspberrypi.yaml
 local_conf_header:
-  development: |
-    LICENSE_FLAGS_ACCEPTED += "synaptics-killswitch"
+  pi0: |
     SKIP_RECIPE[rpi-libcamera-apps] = ""

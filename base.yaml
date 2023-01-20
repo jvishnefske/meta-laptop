@@ -24,7 +24,3 @@ local_conf_header:
     #VIRTUAL_RUNTIME_init_manager = "systemd"
     BB_GENERATE_MIRROR_TARBALLS = "1"
     IMAGE_FSTYPES = "wic.bz2 wic.bmap"
-    BB_SIGNATURE_HANDLER = "OEEquivHash"
-    BB_HASHSERVE = "auto"
-    BB_HASHSERVE_UPSTREAM ??= "hashserv.yocto.io:8687"
-    SSTATE_MIRRORS ??= "file://.* https://sstate.yoctoproject.org/all/PATH;downloadfilename=PATH"
