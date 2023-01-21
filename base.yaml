@@ -12,9 +12,10 @@ defaults:
         #refspec: kirkstone
        refspec: langdale
 distro: poky-altcfg
-target: core-image-weston-sdk
+target: core-image-base
 local_conf_header:
   base: |
+    DISTRO_FEATURES:remove = "x11"
     SYSTEMD_DEFAULT_TARGET = "multi-user.target"
     EXTRA_IMAGE_FEATURES += "read-only-rootfs"
     #EXTRA_IMAGE_FEATURES += " package-management"

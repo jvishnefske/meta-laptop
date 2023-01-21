@@ -12,5 +12,5 @@ local_conf_header:
   arm: |
       LICENSE_FLAGS_ACCEPTED += "armcompiler"
       TCMODE="external-arm"
-      EXTERNAL_TOOLCHAIN = "/work/arm-gnu-toolchain-12.2.rel1-x86_64-aarch64-none-linux-gnu"
+      EXTERNAL_TOOLCHAIN = "${@bb.utils.contains('TUNE_FEATURES','aarch64','/work/arm-gnu-toolchain-12.2.rel1-x86_64-aarch64-none-linux-gnu', '/work/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-linux-gnueabihf',d)}"
   

@@ -2,7 +2,6 @@ header:
   version: 10
   includes:
     - base.yaml
-    #- meta-openembedded.yaml
     - meta-arm.yaml
     - meta-raspberrypi.yaml
 local_conf_header:

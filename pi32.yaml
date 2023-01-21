@@ -3,6 +3,7 @@ header:
   includes:
     - base.yaml
     - meta-arm.yaml
+    - meta-raspberrypi.yaml
 machine: raspberrypi-armv7
 local_conf_header:
   development: |
