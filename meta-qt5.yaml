@@ -1,0 +1,6 @@
+---
+header:
+  version: 1
+repos:
+  meta-qt5:
+     url: https://github.com/meta-qt5/meta-qt5.git

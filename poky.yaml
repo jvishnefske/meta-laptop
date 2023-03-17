@@ -1,6 +1,6 @@
 ---
 header:
-  version: 1
+  version: 9
 repos:
   poky:
     url: "https://git.yoctoproject.org/git/poky"

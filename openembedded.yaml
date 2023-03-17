@@ -1,6 +1,6 @@
 ---
 header:
-  version: 1
+  version: 9
 repos:
    meta-openembedded:
      url: "git://git.openembedded.org/meta-openembedded"

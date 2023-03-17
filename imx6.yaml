@@ -1,0 +1,19 @@
+header:
+  version: 10
+  includes:
+    - base.yaml
+    - meta-freescale.yaml
+    - meta-arm.yaml
+    - meta-openembedded.yaml
+    - meta-qt5.yaml
+defaults:
+    repos:
+      refspec: dunfell
+machine: imx6qdlsabreauto
+local_conf_header:
+  frescale: |
+    ACCEPT_FSL_EULA = "1"
+    CORE_IMAGE_EXTRA_INSTALL += "qtbase"
+    CORE_IMAGE_EXTRA_INSTALL += "boost"
+    CORE_IMAGE_EXTRA_INSTALL += "gcc-sanitizers"
+    CONF_VERSION = "1"
