@@ -33,4 +33,4 @@ jobs:
       - name: run kas
         run: |
           python3 -m pip install kas
-          kas pi0w.yaml build
+          kas build
