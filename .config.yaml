@@ -3,4 +3,3 @@ header:
   includes:
     - base.yaml
 machine: genericx86-64
-target: core-image-weston-sdk
