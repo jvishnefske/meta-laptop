@@ -32,5 +32,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: run kas
         run: |
-          python3 -m pip install kas
-          kas build
+          ./scripts/kas-container build
